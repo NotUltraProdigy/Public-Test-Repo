@@ -12,5 +12,5 @@ permissions:
 
 jobs:
   optimize:
-    uses: GTNewHorizons/GTNH-Actions-Workflows/.github/workflows/optimize-images.yml@master
+    uses: Achrobat/Workflow-Repo/.github/workflows/optimize-images.yml@master
     secrets: inherit
