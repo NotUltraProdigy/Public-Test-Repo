@@ -2,15 +2,16 @@ name: Optimize images
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [ master, main, release/** ]
     paths:
       - "**/*.png"
 
-permissions:
-  contents: write
-  pull-requests: write
+  push:
+    branches: [ master, main, release/** ]
+    paths:
+      - "**/*.png"
 
 jobs:
-  optimize:
+  optimize-images:
     uses: Achrobat/Workflow-Repo/.github/workflows/optimize-images.yml@main
     secrets: inherit
