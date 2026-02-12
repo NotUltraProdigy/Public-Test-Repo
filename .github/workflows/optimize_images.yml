@@ -12,5 +12,5 @@ permissions:
 
 jobs:
   optimize:
-    uses: Achrobat/Workflow-Repo/.github/workflows/optimize-images.yml@master
+    uses: Achrobat/Workflow-Repo/.github/workflows/optimize_images.yml@main
     secrets: inherit
